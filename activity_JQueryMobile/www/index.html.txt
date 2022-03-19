@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charest="utf-8">
+		<meta name="viewport" content="user-scalable=no,
+		initial-scale=1 , maximum-scale=1 ,
+		minimum-scale=1 , width=device-width">
+		<title> Toolbox 2</title>
+		<!--We have to link the JQueryMobile CSS file --!>
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">	
+	</head>
+	<body>
+		<!-- HOME PAGE -->
+		<div data-role="page" id="home">
+		<!-- /header -->
+			<div data-role="header">
+				<a href="#home" class="ui-btn ui-icon-home
+				ui-btn-icon-left ui-btn-inline data-transition="fade" >Home</a>
+				<h1>Home</h1>
+				<!-- data-rel="back" to allow the button the role of going back to the last interface --!>
+				<a href="#" class="ui-btn ui-icon-back
+				ui-btn-icon -left ui-btn_inline" data-rel="back" data-transition="fade">Back</a>
+		</div>
+		<!-- /content -->
+		<div role="main" class="ui-content">
+			<h1>Description:</h1>
+			<p>Hello to my Toolbox 2 application.</p>
+		</div>
+		<!-- /footer -->
+		<div data-role="footer" data-position="fixed>
+			<!-- /navbar -->
+			<div data-role="navbar">
+    		<ul>
+        		<li><a href="#contacts" class="ui-btn-active">Contacts</a></li>
+        		<li><a href="#position" data-transition="fade">Position</a></li>
+        		<li><a href="#about" data-transition="fade">About</a></li>
+   	 		</ul>
+</div>
+			
+		</div>
+
+	<!--the same thing for the other pages -->
+	
+	<!-- contacts -->
+		<div data-role="page" id="contacts">
+		<!-- header -->
+			<div data-role="header">
+				<a href="#home" class="ui-btn ui-icon-home
+				ui-btn-icon-left ui-btn-inline>Home</a>
+				<h1>contacts</h1>
+				<!-- data-rel="back" to allow the button the role of going back to the last interface --!>
+				<a href="#" class="ui-btn ui-icon-back
+				ui-btn-icon -left ui-btn_inline" data-rel="back">Back</a>
+		</div>
+		<!-- content -->
+		<div role="main" class="ui-content">
+		<!-- we have to link the list elements to the panels -->
+			<ul data-role="listview">
+				<li><a href="#panel1">Foulen Ben Foulen</a></li>
+				<li><a href="#Panel2">Foulena Bent Foulen</a></li>
+				</ul>
+		</div>
+		<!--panel1 --!>
+		<div data-role="panel" id="panel1" data-position="right" data-display="overlay">
+			<input type="text" value="Foulen Ben Foulen" disabled="true"/>
+			<input type="text" value="99999999" disabled="true"/>
+		</div>
+		<!--panel2 --!>
+		<div data-role="panel" id="panel2" data-position="right" data-display="overlay">
+			<input type="text" value="Foulena Bent Foulen" disabled="true"/>
+			<input type="text" value="22222222" disabled="true"/>
+		</div>
+		<!-- /footer -->
+		<div data-role="footer" data-position="fixed>
+			<!-- /navbar -->
+			<div data-role="navbar">
+    		<ul>
+        		<li><a href="#contacts" class="ui-btn-active">Contacts</a></li>
+        		<li><a href="#position">Position</a></li>
+        		<li><a href="#about">About</a></li>
+   	 		</ul>
+</div>
+			
+		</div>
+	
+
+
+<!-- Position --!>
+		<div data-role="page" id="position">
+		<!-- /header -->
+			<div data-role="header">
+				<a href="#home" class="ui-btn ui-icon-home
+				ui-btn-icon-left ui-btn-inline>Home</a>
+				<h1>Position</h1>
+				<!-- data-rel="back" to allow the button the role of going back to the last interface --!>
+				<a href="#" class="ui-btn ui-icon-back
+				ui-btn-icon -left ui-btn_inline" data-rel="back">Back</a>
+		</div>
+		<!-- /content -->
+		<div role="main" class="ui-content">
+			<p> Altitude : 0</p>
+			<p>Latitude : 0</p>
+			<p>Longitude : 0</p>
+			<p>Hello to my Toolbox 2 application.</p>
+		</div>
+		<!-- /footer -->
+		<div data-role="footer" data-position="fixed>
+			<!-- /navbar -->
+			<div data-role="navbar">
+    		<ul>
+        		<li><a href="#contacts" class="ui-btn-active">Contacts</a></li>
+        		<li><a href="#position">Position</a></li>
+        		<li><a href="#about">About</a></li>
+   	 		</ul>
+</div>
+			
+		</div>
+
+
+
+
+<!-- About -->
+		<div data-role="page" id="about">
+		<!-- /header -->
+			<div data-role="header">
+				<a href="#home" class="ui-btn ui-icon-home
+				ui-btn-icon-left ui-btn-inline>Home</a>
+				<h1>About</h1>
+				<!-- data-rel="back" to allow the button the role of going back to the last interface --!>
+				<a href="#" class="ui-btn ui-icon-back
+				ui-btn-icon -left ui-btn_inline" data-rel="back">Back</a>
+		</div>
+		<!-- /content -->
+		<div role="main" class="ui-content">
+			<p> Version : 2.0.0</p>
+			<p>System : Android</p>
+			<p>Author : Eya Rayes</p>
+			<p>Web Page <a href="rahmaaayech@gmail.com"> </a> </p>
+			
+		</div>
+		<!-- /footer -->
+		<div data-role="footer" data-position="fixed>
+			<!-- /navbar -->
+			<div data-role="navbar">
+    		<ul>
+        		<li><a href="#contacts" class="ui-btn-active">Contacts</a></li>
+        		<li><a href="#position">Position</a></li>
+        		<li><a href="#about">About</a></li>
+   	 		</ul>
+</div>
+			
+		</div>
+
+
+       <!--we have to add the JS files of JQuery and JQueryMobile--!>	
+	   <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+	   <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	</body>
+</html>
